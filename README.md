@@ -54,3 +54,40 @@ sbt package
 ```
 
 This will generate the JAR file in the target/scala-2.x.x directory.
+
+## Running the Application
+
+To run the application locally, you can use the following command with sbt:
+
+```bash
+sbt run
+```
+
+To submit the application to a Spark cluster, use the spark-submit command as follows:
+
+```bash
+spark-submit --class com.example.Main --master <master-url> target/scala-2.x.x/spark-core-scala-template-assembly-1.0.jar
+```
+
+Replace <master-url> with the URL of your Spark cluster (e.g., local[*] for local mode).
+
+## Project Structure
+
+Here’s an overview of the project structure:
+
+```bash
+spark-core-scala-template/
+├── app/
+│   └── main.scala              # Main entry point for the Spark application
+├── build.sbt                   # sbt build configuration file
+├── config/                     # Configuration files for the application
+│   └── application.conf        # Spark configurations
+├── src/
+│   └── main/
+│       └── scala/
+│           └── com/
+│               └── example/
+│                   └── Main.scala  # Example Spark code
+├── target/                     # Compiled JAR files and other build artifacts
+└── README.md                   # This README file
+```
