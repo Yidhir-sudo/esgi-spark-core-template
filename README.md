@@ -38,3 +38,19 @@ Clone the repository to your local machine using:
 git clone https://github.com/yourusername/spark-core-scala-template.git
 cd spark-core-scala-template
 ```
+### 2. Install Dependencies
+
+This project uses sbt for dependency management. To install all required dependencies, run:
+
+```bash
+sbt update
+```
+
+### 3. Build the Project
+To build the project and package it into a JAR file, run:
+
+```bash
+sbt package
+```
+
+This will generate the JAR file in the target/scala-2.x.x directory.
