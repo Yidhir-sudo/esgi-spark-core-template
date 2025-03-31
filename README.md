@@ -34,7 +34,7 @@ To use this template, you need to have the following installed on your machine:
 Clone the repository to your local machine using:
 
 ```bash
-git clone https://github.com/yourusername/spark-core-scala-template.git
+git clone https://github.com/Yidhir-sudo/esgi-spark-core-template.git
 cd spark-core-scala-template
 ```
 ### 2. Install Dependencies
@@ -65,7 +65,7 @@ sbt run
 To submit the application to a Spark cluster, use the spark-submit command as follows:
 
 ```bash
-spark-submit --class com.example.Main --master <master-url> target/scala-2.x.x/spark-core-scala-template-assembly-1.0.jar
+spark-submit --class com.example.Main --master <master-url> target/scala-2.x.x/esgi-spark-core-template-assembly-1.0.jar
 ```
 
 Replace <master-url> with the URL of your Spark cluster (e.g., local[*] for local mode).
