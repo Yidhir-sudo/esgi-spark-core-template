@@ -76,17 +76,22 @@ Here’s an overview of the project structure:
 
 ```bash
 spark-core-scala-template/
-├── app/
-│   └── main.scala                  # Main entry point for the Spark application
-├── build.sbt                       # sbt build configuration file
-├── config/                         # Configuration files for the application
-│   └── application.conf            # Spark configurations
+├── build.sbt                         # sbt build configuration file
+├── config/                           # Configuration files for the application
+│   └── application.conf              # Spark configurations
 ├── src/
-│   └── main/
-│       └── scala/
-│           └── com/
-│               └── example/
-│                   └── main.scala  # Example Spark code
-├── target/                         # Compiled JAR files and other build artifacts
-└── README.md                       # This README file
+│   ├── main/
+│   │    ├── ressources/              # A folder where the ressources and the configuration of the project are saved
+│   │    └── scala/
+│   │       └── com/
+│   │            └── example/
+│   │                └── main.scala   # Example Spark code
+│   └── test/
+│        ├── ressources/
+│        └── scala/
+│            └── com/
+│                └── example/
+│                    └── myTest.scala # Example of a test class
+├── target/                           # Compiled JAR files and other build artifacts
+└── README.md                         # This README file
 ```
